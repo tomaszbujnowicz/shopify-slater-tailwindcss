@@ -1,0 +1,31 @@
+{
+  "name": "@slater/theme",
+  "version": "1.6.0",
+  "scripts": {
+    "start": "slater watch",
+    "build": "slater build",
+    "deploy:development": "slater build && slater sync",
+    "deploy:production": "slater build && slater sync --theme production",
+    "test:start": "slater watch --config test.config.js",
+    "test:build": "slater build --config test.config.js",
+    "test:deploy": "slater build --config test.config.js && slater sync --config test.config.js",
+    "test:deploy:production": "slater build --config test.config.js && slater sync --theme production --config test.config.js"
+  },
+  "author": "https://thecouch.nyc",
+  "license": "MIT",
+  "homepage": "https://github.com/the-couch/slater#readme",
+  "devDependencies": {
+    "slater": "^1.6.0"
+  },
+  "dependencies": {
+    "choozy": "0.0.3",
+    "lazim": "^1.0.0",
+    "mitt": "^1.1.3",
+    "operator": "^1.4.0",
+    "picoapp": "^3.1.3",
+    "sliced": "^1.0.1",
+    "svbstrate": "^4.1.1",
+    "unfetch": "^4.1.0"
+  },
+  "gitHead": "3efcf640b15bfcbecbba4b4181a6826efa9b6f7e"
+}
