@@ -1,6 +1,6 @@
 #root {
-    transition: opacity .2s cubic-bezier(.12,.67,.53,1);
-  }
-  .is-transitioning #root {
-    opacity: 0;
-  }
+  transition: opacity .2s cubic-bezier(.12,.67,.53,1);
+}
+.is-transitioning #root {
+  opacity: 0;
+}
