@@ -3,7 +3,7 @@ import { getSizedImageUrl, imageSize } from '@/lib/images.js'
 import { formatMoney } from '@/lib/currency.js'
 import app from '@/app.js'
 
-const X = `<svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentcolor" stroke-width="3" style="display:inline-block;vertical-align:middle;overflow:visible;"><path d="M1.0606601717798212 1.0606601717798212 L14.939339828220179 14.939339828220179"></path><path d="M14.939339828220179 1.0606601717798212 L1.0606601717798212 14.939339828220179"></path></svg>`
+const X = `<svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentcolor" stroke-width="3" style="display:inline-block;vertical-align:middle;overflow:visible;"><path d="M1.0606601717798212 1.0606601717798212 L14.939339828220179 14.939339828220179"></path><path d="M14.939339828220179 1.0606601717798212 L1.0606601717798212 14.939339828220179"></path></svg>`
 
 function createItem ({
   variant_id: id,
@@ -20,24 +20,24 @@ function createItem ({
   ) : 'https://source.unsplash.com/R9OS29xJb-8/2000x1333'
 
   return `
-<div class='cart-drawer__item' data-component='cartDrawerItem' data-id=${id}>
-  <div class='f aic'>
+<div class='py-4' data-component='cartDrawerItem' data-id=${id}>
+  <div class='flex'>
     <a href='${url}'>
-      <img src='${img}' />
+      <img src='${img}' class='w-24' />
     </a>
-    <div class='__content pl1 f y ais jcb'>
+    <div class='pl-4 flex w-full items-center justify-between'>
       <div>
-        <a href='${url}' class='serif mv0 p mv0'>${title}</a>
-        <div class='small sans track mt025 mb05 book'>${formatMoney(price)}</div>
-        <div class='f aic'>
-          <div class='cart-quantity js-remove-single px05'>-</div>
+        <a href='${url}'>${title}</a>
+        <div>${formatMoney(price)}</div>
+        <div class='flex items-center'>
+          <div class='cursor-pointer js-remove-single px-2'>-</div>
           <div class='js-single-quantity'>${quantity}</div>
-          <div class='cart-quantity js-add-single px05'>+</div>
+          <div class='cursor-pointer js-add-single px-2'>+</div>
         </div>
-        ${color ? `<div class='xsmall sans caps track cm mv025 book'>${color.split(':')[0]}</div>` : ``}
+        ${color ? `<div>${color.split(':')[0]}</div>` : ``}
       </div>
 
-      <button class='button--reset js-remove-item'>${X}</button>
+      <button class='js-remove-item'>${X}</button>
     </div>
   </div>
 </div>
@@ -51,7 +51,7 @@ function renderItems (items) {
       return markup
     }, '')
   ) : (
-    `<div class='pv1'><p class='pv1 mv05 sans small cm i ac'>Your cart is empty</p></div>`
+    `<div>Your cart is empty</div>`
   )
 }
 

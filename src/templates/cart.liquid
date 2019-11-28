@@ -1,4 +1,4 @@
-<div class='container--l ma'>
+<div class='container mx-auto'>
   {% if cart.item_count > 0 %}
     <h1>{{ 'cart.general.title' | t }}</h1>
 
@@ -99,7 +99,7 @@
       {% endif %}
       <p>{{ 'cart.general.shipping_at_checkout' | t }}</p>
       <input type="submit" name="update" value="{{ 'cart.general.update' | t }}">
-      <input type="submit" name="checkout" class="btn" value="{{ 'cart.general.checkout' | t }}">
+      <input type="submit" name="checkout" value="{{ 'cart.general.checkout' | t }}">
     </form>
   {% else %}
     <h1>{{ 'cart.general.title' | t }}</h1>

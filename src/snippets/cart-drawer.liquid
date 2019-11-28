@@ -1,36 +1,36 @@
-<section class='cart-drawer-outer fix fill x z10' data-component='cartDrawer'>
-  <div class='cart-drawer-overlay abs fill js-overlay'></div>
-  <div class='cart-drawer y x f abs top right bottom bg-green js-drawer'>
-    <header class='outer y abs top left x'>
-      <div class='f aic rel y'>
-        <button class='abs left button--reset js-close'>
+<section class='cart-drawer-outer fixed inset-0 w-full z-50' data-component='cartDrawer'>
+  <div class='cart-drawer-overlay absolute inset-0 js-overlay'></div>
+  <div class='cart-drawer max-w-lg flex-col w-full h-full flex absolute top-0 right-0 bottom-0 pb-40 bg-green-500 js-drawer'>
+
+    <header class='w-full absolute top-0 left-0 p-4'>
+      <div class='flex items-center relative h-full'>
+        <button class='absolute left-0 js-close'>
           &lt;
         </button>
-
-        <h3 class='mv0 serif ac x'>Your Cart</h3>
+        <h3 class='w-full text-center'>Your Cart</h3>
       </div>
     </header>
 
-    <div class='cart-drawer__items outer x y'>
-      <div class='js-items rel x y'>
-        <div class='abs fill'>
-          <svg viewBox="0 0 100 86" class='loader abs fill mxa cg'>
+    <div class='cart-drawer__items w-full h-full overflow-auto px-4 pt-16'>
+      <div class='js-items relative w-full h-full'>
+        <div class='absolute inset-0'>
+          <svg viewBox="0 0 100 86" class='cart-loader absolute inset-0 mx-auto w-24 h-24'>
             <use xlink:href="#logo"></use>
           </svg>
         </div>
       </div>
     </div>
 
-    <footer class='outer abs bottom left right'>
-      <h5 class='mv1 sans track caps ac medium'>Subtotal: <span class='js-subtotal'>$-.--</span></h5>
-
+    <footer class='absolute bottom-0 left-0 right-0 px-4 pb-4'>
+      <h5 class='mb-4'>Subtotal: <span class='js-subtotal'>$-.--</span></h5>
       {%
       include 'component-button' with
       tag: 'a',
       cta: 'Checkout',
       href: '/checkout',
-      className: 'y no-ajax'
+      className: 'inline-block appearance-none no-ajax'
       %}
     </footer>
+
   </div>
 </section>

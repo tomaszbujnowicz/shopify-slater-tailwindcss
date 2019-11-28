@@ -1,33 +1,31 @@
 <div class='header-spacer'></div>
 
-<section class='account-titles outer ac'>
-  <div class='outer'>
-    <div class='container--s mxa'>
-      <h1 class='h2 mb0 caps track medium mb2'>{{ title }}</h1>
+<section class='account-titles text-center'>
+  <div class='mx-auto px-4'>
+    <h1 class='mb-4'>{{ title }}</h1>
 
-      <nav class='account-titles__links small caps track mb1'>
-        <ul class='f aic fw jcc'>
-          <li class='account-titles__link m1'>
-            {% if template contains 'account' %}
-              <span class='cg'>Account Home</span>
-            {% else %}
-              <a class='link--underline' href='/account'>Account Home</a>
-            {% endif %}
-          </li>
+    <nav class='account-titles__links mb-4'>
+      <ul class='flex flex-wrap items-center justify-center'>
+        <li class='account-titles__link m-4'>
+          {% if template contains 'account' %}
+            <span class='cg'>Account Home</span>
+          {% else %}
+            <a class='underline' href='/account'>Account Home</a>
+          {% endif %}
+        </li>
 
-          <li class='account-titles__link m1'>
-            {% if template contains 'address' %}
-              <span>Addresses</span>
-            {% else %}
-              <a class='link--underline' href='/account/addresses'>Addresses</a>
-            {% endif %}
-          </li>
+        <li class='account-titles__link m1'>
+          {% if template contains 'address' %}
+            <span>Addresses</span>
+          {% else %}
+            <a class='underline' href='/account/addresses'>Addresses</a>
+          {% endif %}
+        </li>
 
-          <li class='account-titles__link m1'>
-            <a class='link--underline no-ajax' href='/account/logout'>Logout</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <li class='account-titles__link m-4'>
+          <a class='underline no-ajax' href='/account/logout'>Logout</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </section>

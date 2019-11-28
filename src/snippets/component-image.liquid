@@ -1,5 +1,5 @@
-<div class='image x rel f aic jcc rel {{ className }}' data-src='{{ src }}' data-alt='{{ alt }}'>
-  <img class='block z1 {%if fill%}x y abs fill{%else%}x rel{%endif%}' alt='{{ alt }}' />
+<div class='image overflow-hidden w-full relative flex items-center justify-center {{ className }}' data-src='{{ src }}' data-alt='{{ alt }}'>
+  <img class='block z-10 {%if fill%}w-full h-full absolute inset-0{%else%}w-full relative{%endif%}' alt='{{ alt }}' />
 </div>
 
 {% comment %}
@@ -14,7 +14,7 @@
   _src:{{ _src }}
 </pre>
 {% endcomment %}
-
+ 
 {% comment %}reset{% endcomment %}
 {% assign src = blank %}
 {% assign alt = blank %}

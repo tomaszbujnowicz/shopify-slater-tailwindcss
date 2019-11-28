@@ -19,14 +19,14 @@
 {%- endcapture -%}
 
 {%- capture cx -%}
-  input-wrapper x
+  w-full
   {{ className }}
 {%- endcapture -%}
 
-<div class='{{ cx }} slater-input' data-component='input-text'>
+<div class='{{ cx }}' data-component='input-text'>
   <input
     id='{{ id }}'
-    class='sans p x'
+    class='w-full'
     type='{{ type }}'
     name='{{ name }}'
     placeholder='{{ placeholder }}'
@@ -36,6 +36,6 @@
     spellcheck='{{ spellcheck }}'
     required='{{ required }}'
   />
-  <label for='{{ id }}' class='sans caps small track medium hide'>{{ label }}</label>
+  <label for='{{ id }}'>{{ label }}</label>
   <span></span>
 </div>

@@ -3,10 +3,10 @@
 {% paginate customer.addresses by 100 %}
 
 <div class='account-wrapper'>
-  <section class='account-addresses outer'>
+  <section class='account-addresses px-4'>
     {% include 'account-titles' with title: 'Addresses' %}
-    <div class='container--s mha'>
-      <button class='account-addresses__new button--reset link--underline caps track medium cg mb1' onclick='slater.toggleNewForm()'>Create new address</button>
+    <div class='container mx-auto'>
+      <button class='account-addresses__new underline mb-4' onclick='slater.toggleNewForm()'>Create new address</button>
 
       {%
       include 'account-address-form' with
@@ -14,7 +14,7 @@
       action: customer.new_address,
       title: 'Add New Address',
       cta: 'Add Address',
-      formClassName: 'mb1 pb1'
+      formClassName: 'mb-4 pb1'
       %}
 
       {% comment %}
@@ -32,7 +32,7 @@
         address: address,
         default: default_addy,
         edit: true,
-        className: 'mb1'
+        className: 'mb-4'
         %}
 
         {%
@@ -41,12 +41,12 @@
         action: address,
         title: 'Edit Address',
         cta: 'Update Address',
-        formClassName: 'is-edit-form mb1'
+        formClassName: 'is-edit-form mb-4'
         %}
       {% endfor %}
 
       {% if customer.addresses == empty %}
-        <div class='bggl px1 ac'>You have no saved address.</div>
+        <div>You have no saved address.</div>
       {% endif %}
 
       {% include 'pagination' %}

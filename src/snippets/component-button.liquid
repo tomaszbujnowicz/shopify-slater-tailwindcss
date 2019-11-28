@@ -1,7 +1,7 @@
 {%- capture cx -%}
-  button rel {{ className }}
-  {% if outline == true %}button--outline{% endif %}
-  {% if small == true %}button--small{% endif %}
+  btn {{ className }}
+  {% if outline == true %}btn btn--outline{% endif %}
+  {% if small == true %}btn btn--small{% endif %}
 {%- endcapture -%}
 
 <{{ tag | default: 'a' }}

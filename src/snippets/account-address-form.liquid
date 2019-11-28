@@ -1,4 +1,4 @@
-<div id='form_{{id}}' class='account-address__form x rel {{formClassName}}' style='display: none'>
+<div id='form_{{id}}' class='account-address__form w-full relative {{formClassName}}' style='display: none'>
   {% form 'customer_address', action %}
 
     {% comment %}
@@ -15,8 +15,8 @@
       {% assign form_script = 'slater.toggleForm(' | append: id | append: ')' %}
     {% endif %}
 
-    <div class='account-address__form__fields f ais fcb fw x'>
-      <div class='account-address__form__field x mb1'>
+    <div class='account-address__form__fields flex flex-wrap items-center justify-between w-full'>
+      <div class='account-address__form__field w-full mb-4'>
         {%
         include 'component-input' with
         label: 'First name'
@@ -25,7 +25,7 @@
         value: form.first_name
         %}
       </div>
-      <div class='account-address__form__field x mb1'>
+      <div class='account-address__form__field w-full mb-4'>
         {%
         include 'component-input' with
         label: 'Last name',
@@ -35,7 +35,7 @@
         %}
       </div>
 
-      <div class='account-address__form__field x mb1'>
+      <div class='account-address__form__field w-full mb-4'>
         {%
         include 'component-input' with
         label: 'Company',
@@ -44,7 +44,7 @@
         value: form.company
         %}
       </div>
-      <div class='account-address__form__field x mb1'>
+      <div class='account-address__form__field w-full mb-4'>
         {%
         include 'component-input' with
         label: 'Phone',
@@ -55,7 +55,7 @@
         %}
       </div>
 
-      <div class='account-address__form__field x mb1'>
+      <div class='account-address__form__field w-full mb-4'>
         {%
         include 'component-input' with
         label: 'Address',
@@ -64,7 +64,7 @@
         value: form.address1
         %}
       </div>
-      <div class='account-address__form__field x mb1'>
+      <div class='account-address__form__field w-full mb-4'>
         {%
         include 'component-input' with
         label: 'Apt/Suite number',
@@ -74,7 +74,7 @@
         %}
       </div>
 
-      <div class='account-address__form__field x mb1'>
+      <div class='account-address__form__field w-full mb-4'>
         {%
         include 'component-input' with
         label: 'City',
@@ -83,7 +83,7 @@
         value: form.city
         %}
       </div>
-      <div class='account-address__form__field x mb1'>
+      <div class='account-address__form__field w-full mb-4'>
         {%
         include 'component-input' with
         label: 'Zip',
@@ -93,7 +93,7 @@
         %}
       </div>
 
-      <div class='account-address__form__field x mb1'>
+      <div class='account-address__form__field w-full mb-4'>
         {%- capture attr -%}
         data-default="{{ form.country }}"
         {%- endcapture -%}
@@ -107,7 +107,7 @@
         attributes: attr
         %}
       </div>
-      <div class='account-address__form__field x mb1'>
+      <div class='account-address__form__field w-full mb-4'>
         {%- capture attr -%}
         data-default="{{ form.province }}"
         {%- endcapture -%}
@@ -123,12 +123,12 @@
       </div>
     </div>
 
-    <label for='address_default_address_new{{form_suffix}}' class='checkbox mr05 mt075 mb025 f aic'>
+    <label for='address_default_address_new{{form_suffix}}' class='checkbox mr-2 mt-3 mb-1 flex items-center'>
       {{ form.set_as_default_checkbox }}
-      <span class='ml05 inline-block h6 cg'>Set as default address</span>
+      <span class='ml-2 inline-block'>Set as default address</span>
     </label>
 
-    <div class='pt1 f aic x'>
+    <div class='pt-4 flex items-center w-full'>
       {%
       include 'component-button' with
       tag: 'button',

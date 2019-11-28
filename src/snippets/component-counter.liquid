@@ -2,10 +2,10 @@
 /components/counter.css
 {% endcomment %}
 
-<div class="counter-wrapper rel" data-component="productCounter">
-  <div class="counter rel f aic">
-    <button type="button" class="js-counter-remove">-</button>
-    <input type="number" name="quantity" value="1" min="1" max="" class="js-counter-quantity">
-    <button type="button" class="js-counter-add">+</button>
+<div data-component="productCounter">
+  <div class="relative flex items-center">
+    <button type="button" class="bg-black text-white p-2 w-8 h-8 leading-none focus:outline-none focus:shadow-outline js-counter-remove">-</button>
+    <input type="number" name="quantity" value="1" min="1" max="" class="w-10 h-8 text-center mx-2 js-counter-quantity">
+    <button type="button" class="bg-black text-white p-2 w-8 h-8 leading-none focus:outline-none focus:shadow-outline js-counter-add">+</button>
   </div>
 </div>

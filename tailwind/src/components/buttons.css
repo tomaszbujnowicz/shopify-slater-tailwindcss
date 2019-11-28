@@ -1,0 +1,12 @@
+.btn {
+  @apply py-2 px-4 rounded bg-black text-white;
+}
+.btn--small {
+  @apply py-1 px-2;
+}
+.btn--outline {
+  @apply bg-transparent text-black border border-black;
+}
+.btn--outline:hover {
+  @apply text-white bg-black;
+}

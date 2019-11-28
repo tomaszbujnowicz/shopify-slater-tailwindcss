@@ -1,10 +1,10 @@
-<div class='product-options-wrapper rel'>
+<div class='releative'>
   {% unless product.has_only_default_variant %}
     {% comment %}
-      <div class='py1'>
-        <h6 class='c-green'><em>use selects</em></h6>
+      <div class='py-4'>
+        <h6 class='text-green-500'><em>use selects</em></h6>
         {% for option in product.options_with_values %}
-          <div class='py05'>
+          <div class='py-2'>
             {%- capture options -%}
               {% for value in option.values %}
                 <option value='{{ value | escape }}'
@@ -29,12 +29,12 @@
       </div>
     {% endcomment %}
 
-      <div class='py1'>
-        <h6 class='c-green'><em>or radios</em></h6>
+      <div class='py-4'>
+        <h6><em>or radios</em></h6>
         {% for option in product.options_with_values %}
-          <div class='py05'>
+          <div class='py-2'>
             <label>{{ option.name }}</label>
-            <div class='radio-group f aic' data-option-radio data-index={{ forloop.index0 }}>
+            <div class='flex items-center' data-option-radio data-index={{ forloop.index0 }}>
               {% for value in option.values %}
                 {%
                   include 'component-radio' with

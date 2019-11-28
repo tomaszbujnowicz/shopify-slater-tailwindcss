@@ -1,0 +1,29 @@
+
+.cart-drawer-outer {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+  &.is-visible {
+    .cart-drawer {
+      transform: translateX(0);
+    }
+    .cart-drawer-overlay {
+      opacity: 0.8;
+    }
+  }
+}
+.cart-drawer-overlay {
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+.cart-drawer {
+  transition: all .2s ease-in-out;
+  transform: translateX(100%);
+}
+svg.cart-loader {
+  animation-duration: 1.5s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}

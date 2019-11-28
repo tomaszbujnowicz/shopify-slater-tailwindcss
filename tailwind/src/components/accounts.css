@@ -37,7 +37,6 @@ tfoot td {
   }
   tbody {
     font-size: 0.875rem;
-    /* background-color: var(--lite-pink); */
   }
   .th-product {
     width: 200px;
@@ -105,14 +104,14 @@ tfoot td {
     position: relative;
     cursor: pointer;
     padding: 1rem 3rem;
-    color: var(--ruby);
+    color: ruby;
     outline: none;
     display: inline-block;
     text-align: center;
     font-size: 1rem;
-    border: 2px solid var(--ruby);
+    border: 2px solid ruby;
     width: 100%;
-    border-color: var(--ruby);
+    border-color: ruby;
     background-color: rgba(255,255,255,0);
     text-decoration: none;
     font-weight: 500;
@@ -120,7 +119,7 @@ tfoot td {
       content: '';
     }
     &:hover {
-      background-color: var(--ruby);
+      background-color: ruby;
       color: white;
     }
   }
@@ -128,7 +127,7 @@ tfoot td {
 
 .rc_toggler__block {
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--ruby);
+  border-bottom: 1px solid ruby;
 }
 
 .rc_layout {
@@ -164,7 +163,7 @@ tfoot td {
   }
   .rc_product-item__inner {
     &:hover {
-      background-color: var(--ruby);
+      background-color: ruby;
     }
   }
 }
@@ -184,7 +183,7 @@ tfoot td {
       padding: 0;
       min-width: 20px;
       border: 0px !important;
-      border-bottom: 1px solid var(--ruby) !important;
+      border-bottom: 1px solid ruby !important;
     }
   }
 }
@@ -271,8 +270,8 @@ input[name="product_search_field"] {
 }
 
 .purchase-address {
-  border-bottom: 1px solid var(--ruby);
-  border-top: 1px solid var(--ruby);
+  border-bottom: 1px solid ruby;
+  border-top: 1px solid ruby;
   padding: 2rem 0;
 }
 
@@ -345,10 +344,10 @@ input[name="product_search_field"] {
   padding: 1.33em;
 
   &:nth-of-type(even){
-    background-color: var(--gray);
+    background-color: gray;
   }
   &:nth-of-type(odd){
-    border: 1px solid var(--gray-medium);
+    border: 1px solid gray;
   }
 }
 
@@ -357,7 +356,7 @@ input[name="product_search_field"] {
  */
 .account-order {}
 .account-order__brief {
-  border: 1px solid var(--ruby);
+  border: 1px solid ruby;
   .__row {
     margin-left: -5px;
     margin-right: -5px;
@@ -376,10 +375,10 @@ input[name="product_search_field"] {
 }
 .account-order__details__item {
   &:nth-of-type(even){
-    background-color: var(--gray);
+    background-color: gray;
   }
   &:nth-of-type(odd){
-    border: 1px solid var(--gray-medium);
+    border: 1px solid gray;
   }
 }
 .account-order__totals {

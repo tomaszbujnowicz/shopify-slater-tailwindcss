@@ -1,0 +1,21 @@
+/**
+ * /snippets/component-image.liquid
+ */
+.image {
+  transition: opacity 400ms cubic-bezier(.12,.67,.53,1);
+  
+  img {
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 400ms cubic-bezier(.12,.67,.53,1);
+  }
+
+  &.is-loaded {
+    &::before {
+      opacity: 0;
+    }
+    img {
+      opacity: 1;
+    }
+  }
+}

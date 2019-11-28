@@ -2,8 +2,8 @@
   "name": "@slater/theme",
   "version": "1.6.0",
   "scripts": {
-    "start": "slater watch",
-    "build": "slater build",
+    "start": "(cd tailwind && npm run watch) & slater watch",
+    "build": "(cd tailwind && npm run prod) && slater build",
     "deploy:development": "slater build && slater sync",
     "deploy:production": "slater build && slater sync --theme production",
     "test:start": "slater watch --config test.config.js",
