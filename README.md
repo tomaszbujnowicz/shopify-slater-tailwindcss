@@ -15,6 +15,9 @@ Make sure all dependencies have been installed before moving on:
 * [Node.js](https://nodejs.org/en/download/) >= 8.16.0
 
 ## Quick start: Installation
+Install Slater globally
+- `npm i slater -g`
+
 Clone this repository and run
 - `npm install` to install dependencies (/root folder)
 - `cd tailwind` and `npm install` to install Tailwind depedencies (/tailwind folder)
