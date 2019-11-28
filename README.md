@@ -8,21 +8,21 @@ I took the [Slater theme](https://github.com/the-couch/slater), integrated it wi
 
 Note: the theme needs some love and it's still work in progress.
 
-### Requirements
+## Requirements
 Make sure all dependencies have been installed before moving on:
 
 * [npm](https://www.npmjs.com/get-npm)
 * [Node.js](https://nodejs.org/en/download/) >= 8.16.0
 
-### Quick start: Installation
+## Quick start: Installation
 Clone this repository and run
 - `npm install` to install dependencies (/root folder)
 - `cd tailwind` and `npm install` to install Tailwind depedencies (/tailwind folder)
 
-### Use CSS file
+## Use CSS file
 In order to edit the CSS file, go to /tailwind/src/main.css
 
-### Tasks
+## Tasks
 | Task Name | Description
 | :------------- | :------------- |
 | `npm run start` | Run all tasks and watch all relevant files for changes
@@ -33,5 +33,5 @@ Please run these tasks from root folder.
 
 ## Copyright and license
 MIT License © [The Couch](https://thecouch.nyc)
-Copyright 2019 Tomasz Bujnowicz under the [MIT license](http://opensource.org/licenses/MIT).
 
+Copyright 2019 Tomasz Bujnowicz under the [MIT license](http://opensource.org/licenses/MIT).
