@@ -1,4 +1,4 @@
-# 🚀 Shopify Theme Slater + TailwindCSS with PurgeCSS
+# 🚀 Shopify Starter Theme + TailwindCSS with PurgeCSS
 
 **First of all, big thank your for guys at The Couch for creating Shopify development toolkit called [Slater](https://github.com/the-couch/slater). Special thanks goes to Kevin.**
 

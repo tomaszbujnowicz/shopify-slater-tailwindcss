@@ -1,7 +1,7 @@
 {
-  "name": "laravel-mix-tailwindcss",
+  "name": "shopify-slater-tailwindcss",
   "version": "1.0.0",
-  "description": "Boilerplate with Laravel Mix and TailwindCSS",
+  "description": "Shopify Starter Theme + TailwindCSS with PurgeCSS",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",
