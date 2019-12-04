@@ -2,7 +2,7 @@ const mix = require('laravel-mix');
 const purgecss = require('laravel-mix-purgecss');
 
 mix
-  .postCss('./src/main.css', '../src/styles/main.css', [
+  .postCss('./src/index.css', '../src/assets/index.css', [
     require('postcss-import'),
     require('tailwindcss')('./tailwind.config.js'),   
     require('postcss-nested'),

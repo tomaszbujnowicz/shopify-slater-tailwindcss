@@ -28,8 +28,8 @@ In order to edit the CSS file, go to /tailwind/src/main.css
 ## Tasks
 | Task Name | Description
 | :------------- | :------------- |
-| `npm run start` | Run all tasks and watch all relevant files for changes
-| `npm run build` | Run all tasks, minify output so it's ready to push to production 
+| `npm run start` | Run all tasks and watch all relevant files for changes (PurgeCSS disabled)
+| `npm run build` | Run all tasks, minify output so it's ready to push to production  (PurgeCSS enabled)
 | `slater sync` | Sync local files to your remote theme
 
 Please run these tasks from root folder.

@@ -16,6 +16,10 @@
 @import 'tailwindcss/utilities';
 
 /* purgecss ignore */
-#preview-bar-iframe, .none {
+#preview-bar-iframe, .none,
+#admin-bar-iframe {
   display: none !important;
+}
+html {
+  padding-bottom: 0 !important;
 }
