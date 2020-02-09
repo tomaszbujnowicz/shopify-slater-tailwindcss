@@ -21,13 +21,13 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "cross-env": "^6.0.3",
-    "laravel-mix": "^5.0.0",
+    "cross-env": "^7.0.0",
+    "laravel-mix": "^5.0.1",
     "laravel-mix-purgecss": "^4.2.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.1.4",
-    "vue-template-compiler": "^2.6.10"
+    "tailwindcss": "^1.2.0",
+    "vue-template-compiler": "^2.6.11"
   }
 }
