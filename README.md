@@ -1,3 +1,16 @@
+# Working on updated version of the boilerplate.
+Based on some theme functionality from original Slater repo (including fixes/adjustments from issues and pull requests).
+
+What's more important, It'll work without the complex setup from Slater and instead it'll be based on:
+
+* Laravel Mix 6
+* TailwindCSS 2
+* and original Shopify Theme Kit for quick updates
+
+Stay tuned!
+
+---
+
 # 🚀 Shopify Starter Theme + TailwindCSS with PurgeCSS
 
 **First of all, big thank your for guys at The Couch for creating Shopify development toolkit called [Slater](https://github.com/the-couch/slater)**
