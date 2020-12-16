@@ -1,5 +1,8 @@
-# Working on updated version of the boilerplate.
-Based on some theme functionality from original Slater repo (including fixes/adjustments from issues and pull requests).
+# Important note: Working on updated version of the boilerplate.
+
+You might find this starter theme a little outdated and I am going to archive it soon.
+
+The new starter theme will be based on some theme functionality from original Slater repo (including fixes/adjustments from issues and pull requests).
 
 What's more important, It'll work without the complex setup from Slater and instead it'll be based on:
 
@@ -7,7 +10,7 @@ What's more important, It'll work without the complex setup from Slater and inst
 * TailwindCSS 2
 * and original Shopify Theme Kit for quick updates
 
-Stay tuned!
+Stay tuned ✌
 
 ---
 
